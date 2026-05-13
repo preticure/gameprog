@@ -42,4 +42,6 @@ class Game
 	Vector2 mPaddlePos;
 	// Position of ball
 	Vector2 mBallPos;
+	// Velocity of ball
+	Vector2 mBallVel;
 };
