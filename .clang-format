@@ -1,0 +1,40 @@
+# .clang-format configuration file for the project
+
+# 幅の制限（100を超えない）
+ColumnLimit: 99
+
+# インデントにタブを使用する
+UseTab: Always
+TabWidth: 4
+IndentWidth: 4
+
+# 折り返すときのインデントを揃える
+ContinuationIndentWidth: 4
+
+# コンストラクタ初期化リストのインデントを揃える
+ConstructorInitializerIndentWidth: 4
+
+# 波括弧で改行する
+BreakBeforeBraces: Allman
+
+# 短い波括弧ブロックを1行にまとめない
+AllowShortBlocksOnASingleLine: false
+
+# 波括弧の内側にスペースを入れる
+Cpp11BracedListStyle: false
+
+# 大文字と小文字を区別して、アルファベット順に並べる
+SortIncludes: CaseSensitive
+
+# ポインタの位置を右に揃える
+PointerAlignment: Right
+
+# 折り返し時の引数を縦に揃える
+AlignAfterOpenBracket: Align
+
+# 長いパラメータを1行1引数に展開して揃える
+BinPackArguments: false
+BinPackParameters: false
+
+# 連続代入を整列
+AlignConsecutiveAssignments: Consecutive
