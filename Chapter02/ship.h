@@ -9,9 +9,14 @@ public:
 
 	void UpdateActor(float deltaTime) override;
 	void ProcessKeyboard(const bool *state);
-	float GetRightSpeed() const { return mRightSpeed; }
-	float GetDownSpeed() const { return mDownSpeed; }
-
+	float GetRightSpeed() const
+	{
+		return mRightSpeed;
+	}
+	float GetDownSpeed() const
+	{
+		return mDownSpeed;
+	}
 private:
 	float mRightSpeed;
 	float mDownSpeed;

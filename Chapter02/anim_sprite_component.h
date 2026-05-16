@@ -1,7 +1,7 @@
 #pragma once
 
-#include <SDL3/SDL.h>
 #include <vector>
+#include <SDL3/SDL.h>
 
 #include "sprite_component.h"
 
@@ -16,9 +16,14 @@ public:
 	void SetAnimTextures(const std::vector<SDL_Texture *> &textures);
 
 	// Set/get animation FPS
-	void SetAnimFPS(float animFPS) { mAnimFPS = animFPS; }
-	float GetAnimFPS() const { return mAnimFPS; }
-
+	void SetAnimFPS(float animFPS)
+	{
+		mAnimFPS = animFPS;
+	}
+	float GetAnimFPS() const
+	{
+		return mAnimFPS;
+	}
 private:
 	// all textures in the animation
 	std::vector<SDL_Texture *> mAnimTextures;

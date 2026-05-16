@@ -1,7 +1,7 @@
 #pragma once
 
-#include "SDL3/SDL.h"
 #include <vector>
+#include <SDL3/SDL.h>
 
 #include "game.h"
 #include "math.h"
@@ -20,10 +20,18 @@ public:
 	void SetBGTextures(const std::vector<SDL_Texture *> &textures);
 
 	// Set/get screen size and scroll speed
-	void SetScreenSize(const Vector2 &size) { mScreenSize = size; }
-	void SetScrollSpeed(float speed) { mScrollSpeed = speed; }
-	float GetScrollSpeed() const { return mScrollSpeed; }
-
+	void SetScreenSize(const Vector2 &size)
+	{
+		mScreenSize = size;
+	}
+	void SetScrollSpeed(float speed)
+	{
+		mScrollSpeed = speed;
+	}
+	float GetScrollSpeed() const
+	{
+		return mScrollSpeed;
+	}
 private:
 	// Struct to encapsulate each bg image and its offset
 	struct BGTexture

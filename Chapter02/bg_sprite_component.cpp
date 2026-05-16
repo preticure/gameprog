@@ -1,13 +1,12 @@
-#include <SDL3/SDL.h>
-#include <vector>
-
 #include "bg_sprite_component.h"
+
+#include <vector>
+#include <SDL3/SDL.h>
 
 BGSpriteComponent::BGSpriteComponent(Actor *owner, int drawOrder)
 	: SpriteComponent(owner, drawOrder)
 	, mScrollSpeed(0.0f)
-{
-}
+{}
 
 void BGSpriteComponent::Update(float deltaTime)
 {

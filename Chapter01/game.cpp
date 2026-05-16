@@ -1,6 +1,6 @@
-#include "SDL3/SDL.h"
-
 #include "game.h"
+
+#include <SDL3/SDL.h>
 
 const int thickness = 15;
 const float paddleH = 100.0f;
@@ -11,8 +11,7 @@ Game::Game()
 	, mTicksCount(0)
 	, mIsRunning(true)
 	, mPaddleDir(0)
-{
-}
+{}
 
 bool Game::Initialize()
 {

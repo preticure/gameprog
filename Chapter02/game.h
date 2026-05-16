@@ -3,8 +3,7 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
-
-#include "SDL3/SDL.h"
+#include <SDL3/SDL.h>
 
 class Game
 {
@@ -22,7 +21,6 @@ public:
 	void RemoveSprite(class SpriteComponent *sprite);
 
 	SDL_Texture *GetTexture(const std::string &fileName);
-
 private:
 	void ProcessInput();
 	void UpdateGame();

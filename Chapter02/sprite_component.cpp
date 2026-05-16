@@ -1,7 +1,8 @@
+#include "sprite_component.h"
+
 #include <SDL3/SDL.h>
 
 #include "actor.h"
-#include "sprite_component.h"
 
 SpriteComponent::SpriteComponent(Actor *owner, int drawOrder)
 	: Component(owner)
@@ -13,7 +14,10 @@ SpriteComponent::SpriteComponent(Actor *owner, int drawOrder)
 	owner->GetGame()->AddSprite(this);
 }
 
-SpriteComponent::~SpriteComponent() { mOwner->GetGame()->RemoveSprite(this); }
+SpriteComponent::~SpriteComponent()
+{
+	mOwner->GetGame()->RemoveSprite(this);
+}
 
 void SpriteComponent::Draw(SDL_Renderer *renderer)
 {

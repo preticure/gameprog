@@ -14,10 +14,18 @@ public:
 	virtual void Draw(SDL_Renderer *renderer);
 	virtual void SetTexture(SDL_Texture *texture);
 
-	int GetDrawOrder() const { return mDrawOrder; }
-	int GetTextureHeight() const { return static_cast<int>(mTexHeight); }
-	int GetTextureWidth() const { return static_cast<int>(mTexWidth); }
-
+	int GetDrawOrder() const
+	{
+		return mDrawOrder;
+	}
+	int GetTextureHeight() const
+	{
+		return static_cast<int>(mTexHeight);
+	}
+	int GetTextureWidth() const
+	{
+		return static_cast<int>(mTexWidth);
+	}
 private:
 	SDL_Texture *mTexture;
 	int mDrawOrder;

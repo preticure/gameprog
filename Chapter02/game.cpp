@@ -1,22 +1,22 @@
-#include <SDL3/SDL.h>
-#include <SDL3_image/SDL_image.h>
+#include "game.h"
+
 #include <algorithm>
+#include <SDL3/SDL.h>
 
 #include "actor.h"
 #include "anim_sprite_component.h"
 #include "bg_sprite_component.h"
-#include "game.h"
 #include "math.h"
 #include "ship.h"
 #include "sprite_component.h"
+#include <SDL3_image/SDL_image.h>
 
 Game::Game()
 	: mWindow(nullptr)
 	, mRenderer(nullptr)
 	, mIsRunning(true)
 	, mUpdatingActors(false)
-{
-}
+{}
 
 bool Game::Initialize()
 {

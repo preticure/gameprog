@@ -1,4 +1,4 @@
-#include "SDL3/SDL.h"
+#include <SDL3/SDL.h>
 
 // Vector2 struct just stores x/y coordinates
 // (for now)
@@ -19,7 +19,6 @@ public:
 	void RunLoop();
 	// Shutdown the game
 	void Shutdown();
-
 private:
 	// Helper functions for the game loop
 	void ProcessInput();
