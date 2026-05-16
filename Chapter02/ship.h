@@ -4,7 +4,7 @@
 
 class Ship : public Actor
 {
-  public:
+public:
 	Ship(class Game *game);
 
 	void UpdateActor(float deltaTime) override;
@@ -12,7 +12,7 @@ class Ship : public Actor
 	float GetRightSpeed() const { return mRightSpeed; }
 	float GetDownSpeed() const { return mDownSpeed; }
 
-  private:
+private:
 	float mRightSpeed;
 	float mDownSpeed;
 };

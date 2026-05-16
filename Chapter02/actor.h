@@ -7,7 +7,7 @@
 
 class Actor
 {
-  public:
+public:
 	enum State
 	{
 		EActive,
@@ -42,7 +42,7 @@ class Actor
 	void AddComponent(class Component *component);
 	void RemoveComponent(class Component *component);
 
-  private:
+private:
 	// Actor's state
 	State mState;
 

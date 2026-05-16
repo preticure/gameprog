@@ -1,18 +1,28 @@
-# .clang-format configuration file for the project
 
-# 幅の制限（100を超えない）
-ColumnLimit: 99
+# Configuration of clang-format
+# =============================
 
-# インデントにタブを使用する
+ColumnLimit: 100
+
 UseTab: Always
 TabWidth: 4
 IndentWidth: 4
 
-# 折り返すときのインデントを揃える
 ContinuationIndentWidth: 4
 
-# コンストラクタ初期化リストのインデントを揃える
+BreakConstructorInitializers: BeforeComma
+
+# Indent the : after a constructor. For example:
+#
+#   explicit foo_class ()
+#       : member1_(5)
+#   {
+#   }
+#
 ConstructorInitializerIndentWidth: 4
+
+# Make access modifier more visible.
+AccessModifierOffset: -4
 
 # 波括弧で改行する
 BreakBeforeBraces: Allman
@@ -29,10 +39,43 @@ SortIncludes: CaseSensitive
 # ポインタの位置を右に揃える
 PointerAlignment: Right
 
-# 折り返し時の引数を縦に揃える
+# This causes parameters on continuations to align to the opening brace.
+#
+#   like_this_long_name(parameter_one,
+#                       parameter_two,
+#                       parameter_three);
+#
 AlignAfterOpenBracket: Align
 
-# 長いパラメータを1行1引数に展開して揃える
+# Always break:
+#
+#   const char *foo =
+#       "multi"
+#       "line";
+#
+# Instead of:
+#
+#   const char *foo = "multi"
+#                     "line";
+#
+AlwaysBreakBeforeMultilineStrings: true
+
+# These two settings trigger stacking of parameters in most cases; this is
+# easier to read and also makes diffs easier to read (since an added or removed
+# parameter is obvious). For example, function calls will look like this:
+#
+#   like_this_long_name(parameter_one,
+#                       parameter_two,
+#                       parameter_three,
+#                       parameter_four,
+#                       parameter_five,
+#                       parameter_six);
+#
+# Instead of:
+#
+#   like_this_long_name(parameter_one, parameter_two, parameter_three, parameter_four,
+#                       parameter_five, parameter_six);
+#
 BinPackArguments: false
 BinPackParameters: false
 

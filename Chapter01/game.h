@@ -11,7 +11,7 @@ struct Vector2
 // Game class
 class Game
 {
-  public:
+public:
 	Game();
 	// Initialize the game
 	bool Initialize();
@@ -20,7 +20,7 @@ class Game
 	// Shutdown the game
 	void Shutdown();
 
-  private:
+private:
 	// Helper functions for the game loop
 	void ProcessInput();
 	void UpdateGame();

@@ -6,7 +6,11 @@ const int thickness = 15;
 const float paddleH = 100.0f;
 
 Game::Game()
-	: mWindow(nullptr), mRenderer(nullptr), mTicksCount(0), mIsRunning(true), mPaddleDir(0)
+	: mWindow(nullptr)
+	, mRenderer(nullptr)
+	, mTicksCount(0)
+	, mIsRunning(true)
+	, mPaddleDir(0)
 {
 }
 

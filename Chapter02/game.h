@@ -8,7 +8,7 @@
 
 class Game
 {
-  public:
+public:
 	Game();
 
 	bool Initialize();
@@ -23,7 +23,7 @@ class Game
 
 	SDL_Texture *GetTexture(const std::string &fileName);
 
-  private:
+private:
 	void ProcessInput();
 	void UpdateGame();
 	void GenerateOutput();

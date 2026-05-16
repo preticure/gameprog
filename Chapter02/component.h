@@ -2,7 +2,7 @@
 
 class Component
 {
-  public:
+public:
 	// Constructor
 	// (the lower the update order, the earlier the component updates)
 	Component(class Actor *owner, int updateOrder = 100);
@@ -14,7 +14,7 @@ class Component
 
 	int GetUpdateOrder() const { return mUpdateOrder; }
 
-  protected:
+protected:
 	// Owning actor
 	class Actor *mOwner;
 	// Update order of component

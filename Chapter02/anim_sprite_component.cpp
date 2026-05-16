@@ -1,7 +1,9 @@
 #include "anim_sprite_component.h"
 
 AnimSpriteComponent::AnimSpriteComponent(Actor *owner, int drawOrder)
-	: SpriteComponent(owner, drawOrder), mCurrFrame(0.0f), mAnimFPS(24.0f)
+	: SpriteComponent(owner, drawOrder)
+	, mCurrFrame(0.0f)
+	, mAnimFPS(24.0f)
 {
 }
 

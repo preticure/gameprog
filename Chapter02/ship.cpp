@@ -2,7 +2,10 @@
 #include "anim_sprite_component.h"
 #include "game.h"
 
-Ship::Ship(Game *game) : Actor(game), mRightSpeed(0.0f), mDownSpeed(0.0f)
+Ship::Ship(Game *game)
+	: Actor(game)
+	, mRightSpeed(0.0f)
+	, mDownSpeed(0.0f)
 {
 	// Create an animated sprite component
 	AnimSpriteComponent *anim		 = new AnimSpriteComponent(this);
